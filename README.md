@@ -1,4 +1,5 @@
 # Ficha de Academia
  Projeto de ficha de academia Java
  O repositorio
-gjkdghkjdsghkjf eu sou gay
+ eu sou gay
+ eu quero ser inteligente e bem sucedida 
