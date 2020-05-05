@@ -1,6 +1,8 @@
 package views;
 
+import dao.GrupoMuscularDAO;
 import dao.UsuarioDAO;
+import models.GrupoMuscular;
 import models.Usuario;
 import utils.ClearScreen;
 import utils.Console;
@@ -8,6 +10,7 @@ import utils.Console;
 public class Principal {
 	
 	private static Usuario u = new Usuario();
+	private static GrupoMuscular gp = new GrupoMuscular();
 	
 	public static void main(String[] args) {
 		addPreUsers();
@@ -44,6 +47,48 @@ public class Principal {
 		u.setTipo("1");
 		
 		UsuarioDAO.cadastrar(u);
+		
+		gp = new GrupoMuscular();
+		gp.setId(1);
+		gp.setNome("Bíceps");
+			
+		GrupoMuscularDAO.cadastrar(gp);
+		
+		gp = new GrupoMuscular();
+		gp.setId(2);
+		gp.setNome("Tríceps");
+			
+		GrupoMuscularDAO.cadastrar(gp);
+		
+		gp = new GrupoMuscular();
+		gp.setId(3);
+		gp.setNome("Ombros");
+			
+		GrupoMuscularDAO.cadastrar(gp);
+		
+		gp = new GrupoMuscular();
+		gp.setId(4);
+		gp.setNome("Peito");
+			
+		GrupoMuscularDAO.cadastrar(gp);
+		
+		gp = new GrupoMuscular();
+		gp.setId(5);
+		gp.setNome("ABS");
+			
+		GrupoMuscularDAO.cadastrar(gp);
+		
+		gp = new GrupoMuscular();
+		gp.setId(6);
+		gp.setNome("Costas");
+			
+		GrupoMuscularDAO.cadastrar(gp);
+		
+		gp = new GrupoMuscular();
+		gp.setId(7);
+		gp.setNome("Inferiores");
+			
+		GrupoMuscularDAO.cadastrar(gp);
 	}
 	
 	public static void loadTelaPrincipal() {

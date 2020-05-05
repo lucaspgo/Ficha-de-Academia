@@ -39,6 +39,11 @@ public class PaginaInicial {
 				break;
 				
 			case 2:
+				ListarGrupoMuscular.renderizar();
+				int opcaoGrupoMuscular = Console.readInt("Selecione o grupo muscular que você deseja adicionar:");
+				CadastrarExercicio.renderizar(opcaoGrupoMuscular); 
+				
+					
 				break;				
 		}
 	}
