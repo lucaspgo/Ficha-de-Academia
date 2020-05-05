@@ -3,7 +3,6 @@ package views;
 import dao.UsuarioDAO;
 import utils.Console;
 import utils.ClearScreen;
-import utils.Validacao;
 
 public class Cadastro {
 	public static void renderizar() {

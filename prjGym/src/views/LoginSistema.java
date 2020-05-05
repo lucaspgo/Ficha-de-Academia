@@ -14,8 +14,7 @@ public class LoginSistema
 		{
 			String senha = Console.readString("Senha:");
 			if(UsuarioDAO.checkSenha(login, senha)) {
-				System.out.println("oioi");
-				//Entra no sistema
+				PaginaInicial.renderizar(UsuarioDAO.infoUsuario());
 			}
 			else 
 			{

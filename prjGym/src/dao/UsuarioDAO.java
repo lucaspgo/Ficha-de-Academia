@@ -39,5 +39,9 @@ public class UsuarioDAO {
 		return true;
 	}
 	
+	public static Usuario infoUsuario() {
+		
+		return usuarioSession;
+	}
 	
 }
