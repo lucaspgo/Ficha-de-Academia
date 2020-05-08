@@ -6,8 +6,22 @@ public class Exercicio {
 	private String nome;
 	private GrupoMuscular grupoMuscular;
 	private Integer numRepeticoes;
-	private Double peso;
+	private int peso;
+	private int tempo;
+	private int series;	
 	
+	public int getTempo() {
+		return tempo;
+	}
+	public void setTempo(int tempo) {
+		this.tempo = tempo;
+	}
+	public int getSeries() {
+		return series;
+	}
+	public void setSeries(int series) {
+		this.series = series;
+	}
 	public Integer getId() {
 		return id;
 	}
@@ -32,10 +46,10 @@ public class Exercicio {
 	public void setNumRepeticoes(Integer numRepeticoes) {
 		this.numRepeticoes = numRepeticoes;
 	}
-	public Double getPeso() {
+	public int getPeso() {
 		return peso;
 	}
-	public void setPeso(Double peso) {
+	public void setPeso(int peso) {
 		this.peso = peso;
 	}
 	

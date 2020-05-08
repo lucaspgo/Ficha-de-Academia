@@ -20,7 +20,7 @@ public class VisualizarExercicios {
 		ArrayList<Exercicio> exercicios = FichaDAO.retornarExercicios(grupoMuscularRetornado, u, diaSemana);
 		if( exercicios != null) {
 			for(Exercicio exercicio : exercicios) {
-				System.out.println(exercicio.toString());
+				System.out.println(exercicio.toString() + " | " + "Peso:" + exercicio.getPeso() + " | " + "Series:" + exercicio.getSeries() + " | " + "Tempo:" + exercicio.getTempo());
 			}
 		}else {
 			System.out.println("Não existem exercícios nessa semana");

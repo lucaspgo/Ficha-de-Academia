@@ -28,6 +28,11 @@ public class AdicionarExercicioAFicha{
 				default:
 					Exercicio exercicioRetornado = ExercicioDAO.retornarExercicioPorId(idExercicio);
 					if(exercicioRetornado != null) {
+						int peso = Console.readInt("Qual o peso?");
+						exercicioRetornado.setPeso(peso);
+						exercicioRetornado.setSeries(Console.readInt("Quantas séries?"));
+						exercicioRetornado.setTempo(Console.readInt("Quantos segundos?"));
+						
 						FichaDAO.adicionarExercicioaFicha(exercicioRetornado, u, diaSemana);					
 						
 						System.out.println("Exercício salvo com sucesso!");
