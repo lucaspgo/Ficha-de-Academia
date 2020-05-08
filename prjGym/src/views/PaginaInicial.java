@@ -21,6 +21,7 @@ public class PaginaInicial {
 			
 			switch(opcao) {
 				case 1:
+					ListarExerciciosPessoais.renderizar();
 					break;
 					
 				case 2:

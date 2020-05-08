@@ -44,7 +44,7 @@ public class Principal {
 		u.setPeso(62.00);
 		u.setUsuario("alekkk");
 		u.setSenha("minecraft");
-		u.setTipo("1");
+		u.setTipo("2");
 		
 		UsuarioDAO.cadastrar(u);
 		

@@ -5,15 +5,13 @@ import dao.UsuarioDAO;
 import models.Usuario;
 import utils.Console;
 
-public class VizualizarFicha {
+public class ListarExerciciosPessoais {
 	
 	private static Usuario usuario = new Usuario();
 	
 	public static void renderizar() {
-		String usuarioAluno = Console.readString("Qual o usuario do aluno?"); 
-		if(UsuarioDAO.loginExiste(usuarioAluno)) {
-			if(FichaDAO.usuarioTemFicha(usuarioAluno)) {
-				usuario = UsuarioDAO.retornarUsuarioPorUsername(usuarioAluno);
+		usuario = UsuarioDAO.infoUsuario(); 
+			if(FichaDAO.usuarioTemFicha(usuario.getNome())) {
 				int semanaEscolhida;
 				do {			
 					System.out.println("1 - Segunda");
@@ -57,10 +55,7 @@ public class VizualizarFicha {
 				
 				}while(semanaEscolhida != 0);
 			}else {
-				System.out.println("Este usuario não tem uma ficha, adicione uma para ele.");
+				System.out.println("Você não tem uma ficha, peça para o professor.");
 			}
-		}else {
-			System.out.println("Este usuário não existe no sistema");
-		}
 	}
 }
