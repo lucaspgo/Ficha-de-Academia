@@ -37,6 +37,7 @@ public class PaginaInicial {
 			System.out.println("--- SEJA BEM-VINDO PROFESSOR(A) "+sessionUsuario.getNome().toUpperCase()+" ---");
 			System.out.println("1 - FICHA");
 			System.out.println("2 - EXERCÍCIOS");
+			System.out.println("0 - VOLTAR");
 			
 			opcao = Console.readInt("Selecione a opção desejada:");
 			
@@ -47,7 +48,10 @@ public class PaginaInicial {
 					
 				case 2:
 					menuExercicio();
-					break;				
+					break;
+					
+				default:
+					break;
 			}
 		}while(opcao != 0);
 	}
