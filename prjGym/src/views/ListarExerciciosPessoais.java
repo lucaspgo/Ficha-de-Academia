@@ -11,7 +11,8 @@ public class ListarExerciciosPessoais {
 	
 	public static void renderizar() {
 		usuario = UsuarioDAO.infoUsuario(); 
-			if(FichaDAO.usuarioTemFicha(usuario.getNome())) {
+		System.out.println(usuario.getNome());
+			if(FichaDAO.usuarioTemFicha(usuario.getUsuario())) {
 				int semanaEscolhida;
 				do {			
 					System.out.println("1 - Segunda");

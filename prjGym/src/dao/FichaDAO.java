@@ -42,6 +42,11 @@ public class FichaDAO {
 						
 						ficha.setExercicioSegunda(exerciciosSeg);
 						return true;
+					}else{
+						exerciciosSeg.add(e);
+						
+						ficha.setExercicioSegunda(exerciciosSeg);
+						return true;
 					}
 				}
 			}
@@ -52,6 +57,11 @@ public class FichaDAO {
 					ArrayList<Exercicio> exerciciosTer = new ArrayList<Exercicio>();
 					if(ficha.getExercicioTerca() != null) {
 						exerciciosTer = ficha.getExercicioTerca();
+						exerciciosTer.add(e);
+						
+						ficha.setExercicioTerca(exerciciosTer);
+						return true;
+					}else{
 						exerciciosTer.add(e);
 						
 						ficha.setExercicioTerca(exerciciosTer);
@@ -70,6 +80,11 @@ public class FichaDAO {
 						
 						ficha.setExercicioQuarta(exerciciosQua);
 						return true;
+					}else{
+						exerciciosQua.add(e);
+						
+						ficha.setExercicioQuarta(exerciciosQua);
+						return true;
 					}
 				}
 			}
@@ -80,6 +95,11 @@ public class FichaDAO {
 					ArrayList<Exercicio> exerciciosQui = new ArrayList<Exercicio>();
 					if(ficha.getExercicioQuinta() != null) {
 						exerciciosQui = ficha.getExercicioQuinta();
+						exerciciosQui.add(e);
+						
+						ficha.setExercicioQuinta(exerciciosQui);
+						return true;
+					}else{
 						exerciciosQui.add(e);
 						
 						ficha.setExercicioQuinta(exerciciosQui);
@@ -98,6 +118,11 @@ public class FichaDAO {
 						
 						ficha.setExercicioSexta(exerciciosSex);
 						return true;
+					}else{
+						exerciciosSex.add(e);
+						
+						ficha.setExercicioSexta(exerciciosSex);
+						return true;
 					}
 				}
 			}
@@ -112,6 +137,11 @@ public class FichaDAO {
 						
 						ficha.setExercicioSabado(exerciciosSab);
 						return true;
+					}else{
+						exerciciosSab.add(e);
+						
+						ficha.setExercicioSabado(exerciciosSab);
+						return true;
 					}
 				}
 			}
@@ -122,6 +152,11 @@ public class FichaDAO {
 					ArrayList<Exercicio> exerciciosDom = new ArrayList<Exercicio>();
 					if(ficha.getExercicioDomingo() != null) {
 						exerciciosDom = ficha.getExercicioDomingo();
+						exerciciosDom.add(e);
+						
+						ficha.setExercicioDomingo(exerciciosDom);
+						return true;
+					}else{
 						exerciciosDom.add(e);
 						
 						ficha.setExercicioDomingo(exerciciosDom);

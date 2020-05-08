@@ -7,7 +7,6 @@ public class LoginSistema
 {
 	public static void renderizar() 
 	{
-		ClearScreen.clear();
 		String login = Console.readString("Login:");
 		
 		if(UsuarioDAO.loginExiste(login)) {

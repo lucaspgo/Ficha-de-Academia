@@ -16,7 +16,7 @@ public class PaginaInicial {
 		do {
 			System.out.println("--- SEJA BEM-VINDO ALUNO(A)" +sessionUsuario.getNome().toUpperCase()+" ---");
 			System.out.println("1 - VER FICHA");
-			System.out.println("2 - SAIR");
+			System.out.println("0 - SAIR");
 			opcao = Console.readInt("Selecione a opção desejada:");
 			
 			switch(opcao) {
@@ -24,7 +24,7 @@ public class PaginaInicial {
 					ListarExerciciosPessoais.renderizar();
 					break;
 					
-				case 2:
+				case 0:
 					break;				
 			}
 			

@@ -23,7 +23,7 @@ public class Principal {
 		u.setNome("Lucas Pereira");
 		u.setPeso(62.00);
 		u.setUsuario("lucaspgo");
-		u.setSenha("mylittleponey");
+		u.setSenha("mlp");
 		u.setTipo("1");
 		
 		UsuarioDAO.cadastrar(u);

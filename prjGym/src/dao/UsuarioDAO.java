@@ -36,15 +36,11 @@ public class UsuarioDAO {
 	
 	public static Boolean cadastrar(Usuario u) {
 		usuarios.add(u);
-		for (Usuario usuarioCadastrado : usuarios) {
-			System.out.println("Nome:" + usuarioCadastrado.getNome());
-		}
 		
 		return true;
 	}
 	
-	public static Usuario infoUsuario() {
-		
+	public static Usuario infoUsuario() {		
 		return usuarioSession;
 	}
 	
