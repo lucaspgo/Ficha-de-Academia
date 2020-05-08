@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="views.ListarExerciciosPorGrupoMuscular"/>
+<fullyQualifiedTypeName name="dao.ExercicioDAO"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.SWITCH"/>
+<fullyQualifiedTypeName name="views.ListarExercicioPorId"/>
+<fullyQualifiedTypeName name="views.CadastrarFicha"/>
+<fullyQualifiedTypeName name="utils.Console"/>
+<fullyQualifiedTypeName name="dao.UsuarioDAO"/>
+<fullyQualifiedTypeName name="models.Ficha"/>
+<fullyQualifiedTypeName name="views.AdicionarExercicioSegunda"/>
+<fullyQualifiedTypeName name="models.Exercicio"/>
+<fullyQualifiedTypeName name="dao.FichaDAO"/>
+<fullyQualifiedTypeName name="models.GrupoMuscular"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="models.Usuario"/>
+</qualifiedTypeNameHistroy>

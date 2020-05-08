@@ -10,26 +10,26 @@ public class LoginSistema
 		ClearScreen.clear();
 		String login = Console.readString("Login:");
 		
-		if(UsuarioDAO.loginExiste(login)) 
-		{
+		if(UsuarioDAO.loginExiste(login)) {
+			
 			String senha = Console.readString("Senha:");
+			
 			if(UsuarioDAO.checkSenha(login, senha)) {
 				PaginaInicial.renderizar(UsuarioDAO.infoUsuario());
 			}
-			else 
-			{
-				System.out.println("Senha incorreta, insira sua senha novamente.\n");
+			else {
+				System.out.println("Senha incorreta, insira sua senha novamente.\n");				
 				int opcao = Console.readInt("\n1 -  Realizar login novamente\n2 - Voltar para a página inicial");
+				
 				switch(opcao) {
 					case 1:
 						renderizar();
 						break;
-					case 2:
+					default:
 						Principal.loadTelaPrincipal();
 						break;
 				}
-			}
-			
+			}			
 		}
 		else
 		{
@@ -39,7 +39,7 @@ public class LoginSistema
 				case 1:
 					renderizar();
 					break;
-				case 2:
+				default:
 					Principal.loadTelaPrincipal();
 					break;
 					

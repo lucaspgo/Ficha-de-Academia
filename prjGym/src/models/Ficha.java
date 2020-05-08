@@ -10,6 +10,7 @@ public class Ficha {
 	private ArrayList<Exercicio> exercicioQuarta;
 	private ArrayList<Exercicio> exercicioQuinta;
 	private ArrayList<Exercicio> exercicioSexta;
+	private ArrayList<Exercicio> exercicioSabado;
 	
 	public Usuario getUsuario() {
 		return usuario;
@@ -59,6 +60,5 @@ public class Ficha {
 	public void setExercicioSabado(ArrayList<Exercicio> exercicioSabado) {
 		this.exercicioSabado = exercicioSabado;
 	}
-	private ArrayList<Exercicio> exercicioSabado;
 	
 }

@@ -92,7 +92,6 @@ public class Principal {
 	}
 	
 	public static void loadTelaPrincipal() {
-		ClearScreen.clear();
 		int option;
 		
 		do {

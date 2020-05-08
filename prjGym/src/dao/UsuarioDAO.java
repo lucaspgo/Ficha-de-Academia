@@ -44,4 +44,13 @@ public class UsuarioDAO {
 		return usuarioSession;
 	}
 	
+	public static Usuario retornarUsuarioPorUsername(String usuario) {
+		for (Usuario usuarioCadastrado : usuarios) {
+			if (usuarioCadastrado.getUsuario().equals(usuario)) {
+				return usuarioCadastrado;
+			}
+		}
+		return null;
+	}
+	
 }

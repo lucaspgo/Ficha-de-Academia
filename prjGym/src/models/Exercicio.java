@@ -39,6 +39,9 @@ public class Exercicio {
 		this.peso = peso;
 	}
 	
+	public String toString() {		
+		return getId() + " | " + getNome() + " | " + getGrupoMuscular().getNome();
+	}
 	
 	
 }
