@@ -37,7 +37,6 @@ public class PaginaInicial {
 			System.out.println("--- SEJA BEM-VINDO PROFESSOR(A) "+sessionUsuario.getNome().toUpperCase()+" ---");
 			System.out.println("1 - FICHA");
 			System.out.println("2 - EXERCÍCIOS");
-			System.out.println("3 - ALTERAR USUARIO");
 			
 			opcao = Console.readInt("Selecione a opção desejada:");
 			

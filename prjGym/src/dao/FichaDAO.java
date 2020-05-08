@@ -17,7 +17,7 @@ public class FichaDAO {
 			}
 		}
 		fichas.add(f);
-		return false;		
+		return true;		
 	}
 	
 	public static Boolean usuarioTemFicha(String usuario) {

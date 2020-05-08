@@ -12,7 +12,8 @@ public class CadastrarFicha {
 	public static void renderizar() {
 		ficha = new Ficha();
 		
-		String usuarioAluno = Console.readString("Qual o usuario do aluno?"); 
+		String usuarioAluno = Console.readString("Qual o usuario do aluno?");
+		
 		if(UsuarioDAO.loginExiste(usuarioAluno)) {
 			
 			ficha.setUsuario(UsuarioDAO.retornarUsuarioPorUsername(usuarioAluno));
